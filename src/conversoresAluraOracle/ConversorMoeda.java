@@ -6,7 +6,7 @@
  * documentação- https://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html
  * Java Sprint 01 Live Coding Conversor de Moedas -> https://www.youtube.com/watch?v=cj0fu9VpH_E
  */
-package conversorAluraOracle;
+package conversoresAluraOracle;
 
 import javax.swing.JOptionPane;
 
