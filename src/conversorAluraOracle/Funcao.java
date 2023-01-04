@@ -11,13 +11,21 @@ package conversorAluraOracle;
 import javax.swing.JOptionPane;
 
 public class Funcao{
-public static void main (String[] args) {
-	String opcoes =JOptionPane.showInputDialog(null,"Escolha opção", "Menu",JOptionPane.INFORMATION_MESSAGE, null,new Object[]{"Conversor de Moeda","Conversor de Moeda"},"Escolha").toString();
+	ConversorMoeda moedas = new ConversorMoeda();
 	
-	switch(opcoes) {
-	case "Conversor de Moeda":
-		String input = JOptionPane.showInputDialog("Insira O valor");
-		
+public void ConversorMoedas (double valorRecebido) {
+	String opcao = (JOptionPane.showInputDialog(null,
+			"Escolha A moeda para qual você deseja converter","Moedas",JOptionPane.INFORMATION_MESSAGE, null,new Object[]{"De Reais para Dólares","De Reais para Euro"},"Escolha").toString();
+	).toString();
+	switch(opcao) {
+	case "De Reais para Dólares":
+		moedas.ConverterReaisADolar(ValorRecebido);
+		break;
+	
+	case "De Reais para Euro":
+		moedas.ConverterReaisAEuro(ValorRecebido);
+		break;
+	
 	}
-}
+	
 }

@@ -10,14 +10,15 @@ package conversorAluraOracle;
 
 import javax.swing.JOptionPane;
 
-public class Principal{
 public static void main (String[] args) {
-	String opcoes =JOptionPane.showInputDialog(null,"Escolha opção", "Menu",JOptionPane.INFORMATION_MESSAGE, null,new Object[]{"Conversor de Moeda","Conversor de Moeda"},"Escolha").toString();
+	Funcao moeda = new Funcao();
+	String opcoes =JOptionPane.showInputDialog(null,"Escolha opção", "Menu",JOptionPane.INFORMATION_MESSAGE, null,new Object[]{"Conversor de Moeda","Conversor de Temperatura"},"Escolha").toString();
 	
 	switch(opcoes) {
 	case "Conversor de Moeda":
 		String input = JOptionPane.showInputDialog("Insira O valor");
+		double valorRecebido = Double.parseDouble(input);
+		moeda.ConverterMoedas(valorRecebido);
 		
 	}
-}
 }
