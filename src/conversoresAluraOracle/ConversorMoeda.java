@@ -15,14 +15,13 @@ public class ConversorMoeda{
 	public void ConverterReaisADolar(double valor) {
 		double moedaDolar = valor/ 5.23;
 		moedaDolar = (double) Math.round(moedaDolar*100d)/100;
-		JOptionPane.showMessageDialog(null, "Você tem US$ "+moedaDolar+"Dolares");
+		JOptionPane.showMessageDialog(null, "Você tem US$ " + moedaDolar + " Dolares");
 	}
 	
 	public void ConverterReaisAEuro(double valor) {
 		double moedaEuro = valor/ 5.50;
 		moedaEuro = (double) Math.round(moedaEuro*100d)/100;
-		JOptionPane.showMessageDialog(null, "Você tem US$ "+moedaEuro+"Euros");
+		JOptionPane.showMessageDialog(null, "Você tem "+ moedaEuro +" Euros");
 	}
-	
 	
 }
